@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4C1E8"
+    android:padding="16dp">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FAF7F7"
+        android:padding="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/topbar_rounded"/>
+
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/profile"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:textColor="#2C3E50"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Profile Section Card -->
+    <LinearLayout
+        android:id="@+id/profileSection"
+        android:layout_below="@id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+
+        android:elevation="6dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/profile_card_rounded">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="86dp"
+            android:layout_height="114dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/profile_image_bg"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY PROFILE"
+                android:textSize="20sp"
+                android:textColor="#34495E"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 BDT"
+                android:textColor="#FFFFFF"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#27AE60"
+                android:background="@drawable/balance_rounded"/>
+
+            <Button
+                android:id="@+id/btnAddService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Property"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#D32F2F"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/btn_rounded_red"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Logout Button fixed bottom -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D32F2F"
+        android:background="@drawable/btn_rounded_red" />
+
+</RelativeLayout>

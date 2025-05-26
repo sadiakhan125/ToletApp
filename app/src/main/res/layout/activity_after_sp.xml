@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="282dp"
+        android:layout_height="245dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="Main image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sadia" />
+
+    <!-- Button for Homeowner -->
+    <Button
+        android:id="@+id/btnHomeowner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homeowner"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#132BD2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Button for Rental -->
+    <Button
+        android:id="@+id/btnRental"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rental"
+        android:backgroundTint="#DD4646"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

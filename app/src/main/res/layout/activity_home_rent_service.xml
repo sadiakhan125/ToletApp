@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:padding="20dp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvAddHomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Home Rent Service"
+            android:textSize="28sp"
+            android:textColor="#2C3E50"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp" />
+
+        <!-- Input fields container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="24dp"
+            android:shape="rectangle"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#4795DD"
+            android:backgroundTintMode="src_over"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Home Title -->
+            <EditText
+                android:id="@+id/etHomeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Home Title"
+                android:background="@drawable/et_bg"
+                android:padding="12dp"
+                android:textColor="#34495E"
+                android:textSize="16sp"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Address"
+                android:background="@drawable/et_bg"
+                android:padding="12dp"
+                android:textColor="#34495E"
+                android:textSize="16sp"
+                android:inputType="textPostalAddress"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Rent Price -->
+            <EditText
+                android:id="@+id/etRentPrice"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Rent Price (BDT)"
+                android:background="@drawable/et_bg"
+                android:padding="12dp"
+                android:textColor="#34495E"
+                android:textSize="16sp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Bedrooms -->
+            <EditText
+                android:id="@+id/etBedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Number of Bedrooms"
+                android:background="@drawable/et_bg"
+                android:padding="12dp"
+                android:textColor="#34495E"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Contact Number -->
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Contact Number"
+                android:background="@drawable/et_bg"
+                android:padding="12dp"
+                android:textColor="#34495E"
+                android:textSize="16sp"
+                android:inputType="phone"
+                android:layout_marginBottom="0dp" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:backgroundTint="#2980B9"
+            android:elevation="6dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/btn_rounded"/>
+
+    </LinearLayout>
+</ScrollView>

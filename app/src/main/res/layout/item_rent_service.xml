@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius="20dp"
+    android:background="#F4EFEF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9AC6F2"
+        android:clipToPadding="false"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Home Title -->
+        <TextView
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:letterSpacing="0.02"
+            android:text="Home Title"
+            android:textColor="#050505"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:letterSpacing="0.01"
+            android:text="Address"
+            android:textColor="#050505"
+            android:textSize="20sp" />
+
+        <!-- Rent Price -->
+        <TextView
+            android:id="@+id/tvRentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:letterSpacing="0.01"
+            android:text="Price: 0000 BDT"
+            android:textColor="#141212"
+            android:textSize="20sp" />
+
+        <!-- Bedrooms -->
+        <TextView
+            android:id="@+id/tvBedrooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:letterSpacing="0.01"
+            android:text="Bedrooms: 0"
+            android:textColor="#121010"
+            android:textSize="20sp" />
+
+        <!-- Contact -->
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.02"
+            android:text="Contact: 0000"
+            android:textColor="#171515"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

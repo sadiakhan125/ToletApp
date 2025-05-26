@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFDFF"
+    android:layout_marginTop="70dp">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Tolet App!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#34495e"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="32dp" />
+
+    <!-- RecyclerView to list homes -->
+
+    <!-- Add Home Rent Service Button fixed at bottom -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHomeList"
+        android:layout_width="364dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="12dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnAddRent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_rounded"
+        android:backgroundTint="#197FC2"
+        android:elevation="6dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>
